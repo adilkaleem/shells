@@ -37,14 +37,3 @@ if [[ $ROOT -gt $LIMIT ]]
 then
         echo $ROOT_DIR | $MAILX -s "ROOT Dir Stats in Slave 2" "$MAILTO"
 fi
-
-#sh -c `sudo rm du_space_stats`
-#cd $ROOTX
-#for i in `ls`
-#do
-#echo "Current scanning dir: $i
-#du -hP /$i | grep [0-9]G >> du_space_stats
-#cd $ROOTX
-#done
-
-#cat /du_space_stats >> $MAILX -s "Root dir stats--> " "$MAILTO"
